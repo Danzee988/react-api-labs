@@ -1,5 +1,5 @@
 {
-  "name": "apis",
+  "name": "node-lab1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,6 +36,13 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-  }
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^3.0.2"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "author": "danzee980",
+  "license": "ISC"
 }
