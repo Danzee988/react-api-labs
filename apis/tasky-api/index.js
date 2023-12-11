@@ -3,6 +3,7 @@ import express from 'express';
 import tasksRouter from './api/tasks';
 import './database';
 import usersRouter from './api/users';
+import cors from 'cors';
 
 
 
@@ -18,6 +19,8 @@ const errHandler = (err, req, res, next) => {
 };
 
 const app = express();
+
+app.use(cors());
 
 const port = process.env.PORT;
 
