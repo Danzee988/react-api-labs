@@ -5,6 +5,7 @@ import usersRouter from './api/users';
 import './database';
 import defaultErrHandler from './errHandler';
 import moviesRouter from './api/movies';   //import movies router
+import authenticate from './authenticate';
 
 
 dotenv.config();
@@ -20,6 +21,8 @@ app.use(express.json());
 app.use('/api/users', usersRouter);
 
 app.use('/api/movies', moviesRouter);
+
+app.use('/api/movies',authenticate,  moviesRouter);
 
 app.use(defaultErrHandler);
 
